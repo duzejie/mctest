@@ -8,10 +8,29 @@ class variation:
         self.std = std
         self.size = size
         self.data = np.random.normal(mean, std, size)
-        #self.relmean = np.mean(self.data)
+        self.relmean = np.mean(self.data)
+        self.relstd = np.std(self.data)
+        self.relmedian = np.median(self.data)
+
+def corrcoef(x,y):
+    return np.corrcoef(x.data,y.data)
+
+
+def write2file(data,fileName):
+    f = open(fileName,'w')
+    for d in data:
+        f.write(str(d) + "\n")
+    f.close()
+
+def column_stack(row1,row2):
+    '''
+    ##使成为二维数组
+    '''
+    return np.column_stack((row1.data, row2.data))
 
 
 
+'''
 toxe = variation('toxe',2.73e-9, 1.0e-9, 500)
 print(toxe.name)
 print(toxe.mean)
@@ -19,7 +38,7 @@ print(toxe.std)
 print(toxe.size)
 print(toxe.data)
 
-'''
+
 meanToxe = 2.73e-9
 
 stdToxe  = 1.0e-9
