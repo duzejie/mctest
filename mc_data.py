@@ -8,11 +8,16 @@ class variation:
         self.std = std
         self.size = size
         self.data = np.random.normal(mean, std, size)
-        self.relmean = np.mean(self.data)
+        #self.relmean = np.mean(self.data)
 
 
 
 toxe = variation('toxe',2.73e-9, 1.0e-9, 500)
+print(toxe.name)
+print(toxe.mean)
+print(toxe.std)
+print(toxe.size)
+print(toxe.data)
 
 '''
 meanToxe = 2.73e-9
