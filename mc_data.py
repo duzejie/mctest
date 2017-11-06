@@ -11,7 +11,17 @@ class variation:
         self.relmean = np.mean(self.data)
         self.relstd = np.std(self.data)
         self.relmedian = np.median(self.data)
-
+'''    def __init__(self,fileName,name,size):
+        f = open(fileName,'r')
+        self.data=[]
+        for line in f:
+            self.data += [float(line)]
+        self.name = name 
+        self.size = size
+        self.relmean = np.mean(self.data)
+        self.relstd = np.std(self.data)
+        self.relmedian = np.median(self.data)
+'''
 def corrcoef(x,y):
     return np.corrcoef(x.data,y.data)
 

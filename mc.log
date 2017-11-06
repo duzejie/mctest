@@ -1,0 +1,16 @@
+tox
+inputMean:5.5e-09
+relmaen:5.48699585912e-09
+relmedian5.44011445226e-09
+inputSTD:5e-10
+relSTD:5.09399417061e-10
+toxSize:200
+h0
+inputMean:83413
+relmaen:83374.8165724
+relmedian83440.2808043
+inputSTD:1000
+relSTD:945.245049737
+h0Size:200
+corrcoef:[[ 1.          0.04835821]
+ [ 0.04835821  1.        ]]
